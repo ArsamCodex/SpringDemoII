@@ -7,10 +7,10 @@ import java.util.List;
 import java.util.Optional;
 
 public class EmployeeServiceImpl implements EmployeeService {
-  private final EmployeeService employeeService;
+    private final EmployeeRepository employeeRepository;
 
-    public EmployeeServiceImpl(EmployeeService employeeService){
-        this.employeeService = employeeService;
+    public EmployeeServiceImpl(EmployeeRepository employeeRepository){
+        this.employeeRepository = employeeRepository;
         //CONSTRUCTOR INJECTION
     }
 
